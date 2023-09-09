@@ -11,6 +11,7 @@ local gameCamera = workspace.CurrentCamera
 local lplr = playersService.LocalPlayer
 local vapeConnections = {}
 local vapeCachedAssets = {}
+local cipsko = false
 local vapeTargetInfo = shared.VapeTargetInfo
 local vapeInjected = true
 table.insert(vapeConnections, workspace:GetPropertyChangedSignal("CurrentCamera"):Connect(function()
@@ -269,6 +270,12 @@ local function EntityNearMouse(distance, checktab)
 			return v.entity
 		end
     end
+end
+if cipsko == true then
+	repeat
+	print("WINOGRONA CZERWONE TYLKO 40% TANIEJ")
+	task.wait()
+	until not cipsko
 end
 
 local function AllNearPosition(distance, amount, checktab)
